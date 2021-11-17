@@ -1,0 +1,61 @@
+extends ../layout
+
+block head
+    title Priscilla Hon | Talent | imaego
+    - var bodyClass='headerHide showBack'
+
+block content
+    h2.teko.bg--title.home TALENT
+    section.container--responsive
+        .inner_container 
+            h1.page-title.teko.font--center.desktopOnly PRISCILLA HON
+            h2.teko.bg--title.talent-header.mobileOnly Priscilla Hon
+            //- p.page-subtitle.font--center.mb--40.desktopOnly Written by Priscilla herself, here's a little bit about her story...
+            .centerSocial.desktopOnly    
+                    ul.social
+                        div.socialHandles
+                            li
+                                a(href="https://www.instagram.com/priscilla_hon/" target="_blank")
+                                    i.im--instagram
+                            a.handlesLink(href="https://www.instagram.com/priscilla_hon/" target="_blank")
+                                    p.handles priscilla_hon
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            .leftSocial.mobileOnly    
+                    ul.social
+                        li
+                            a(href="https://www.instagram.com/priscilla_hon/" target="_blank")
+                                i.im--instagram
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            img(src=require('src/images/priscilla/Priscilla_CP.jpg') alt="Priscilla Hon")
+            .stroke-line
+            p.page-subtitle.font--center.mb--45 Written by Priscilla herself, here's a little bit about her story...
+            p.talent-text Hey!
+            p.talent-text My name is Priscilla Hon, and I am a professional tennis player. I picked up my first racquet at the age of 5 and I've played ever since! I've been travelling overseas yearly since I was 12 so I've seen a lot of the world thanks to tennis, but this led to a very different childhood being homeschooled due to my tennis commitments.
+            p.talent-text Tennis for me is a huge part of my life, but I have plenty of other interests as well such as business which really excites me and something I want to pursue further, in particular business fashion with my shoe brand Platform6! My other huge interest is food. I love finding cute cafes and restaurants when I travel and at home in Aus. Within tennis an area I am extremely proud to be a part of is being an ambassador for Multicultural Australia Sports, an area close to my heart, and a cause I love to work with.
+            p.talent-text I don't want to be a preacher on social media, but I do want to inspire people with what I post and the brands I promote, by making sure I associate myself with all-things truly Pri!
+            .gallery-images.desktopOnly
+                .image
+                    img(src=require('src/images/priscilla/Priscilla1.jpg') alt="Priscilla Hon")
+                .image
+                    img(src=require('src/images/priscilla/Priscilla2.jpg') alt="Priscilla Hon")
+                .image
+                    img(src=require('src/images/priscilla/Priscilla3.jpg') alt="Priscilla Hon")
+            .gallery-images.mobileOnly.showFlex
+                .image
+                    img(src=require('src/images/priscilla/Priscilla1.jpg') alt="Priscilla Hon")
+                .image
+                    img(src=require('src/images/priscilla/Priscilla3.jpg') alt="Priscilla Hon")
+            .gallery-images.mobileOnly.mt-3
+                .image.fullImage
+                    img(src=require('src/images/priscilla/Priscilla2.jpg') alt="Priscilla Hon")
+            

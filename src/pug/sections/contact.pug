@@ -1,0 +1,34 @@
+section.swiper-slide( data-home-slide="6" data-html="Contact Us" )
+    h2.teko.bg--title CONTACT US
+    .content--container.contact
+        .left
+        .middle
+            .contact--container
+                
+                .subcont 
+                    h3.contact--title.teko CONNECT WITH US
+                    p.mobileText.mb-30 Whether you are an athlete/influencer, you work with a brand/agency, or are just interested to know more, please write to us below - we would love to hear from you!
+                form#contactForm
+                    .form--row
+                        label.teko(for="full_name") FULL NAME
+                        input#full_name(type="text" name="full_name" placeholder="Enter Full Name")
+                        span#full_name-error.error Please enter your full name
+                    .form--row
+                        label.teko(for="email") EMAIL
+                        input#email(type="email" name="email" placeholder="abcd@email.com")
+                        span#email-error.error Please enter your email
+                    .form--row
+                        label.teko(for="comment") COMMENT
+                        textarea#comment(type="text" name="comment" rows="10" placeholder="Type something…")
+                        span#comment-error.error
+                    .form--row.center
+                        label 
+                        button.plus--link(type="submit")
+                            i.im--cross
+                            span SUBMIT
+                    .form--row.center.success.message
+                        label 
+                        span Message sent successfully
+                    .mb-20.mobileOnly
+        .right
+    img.indicator-arrow.top(src=require('src/images/arrow-up.svg'))

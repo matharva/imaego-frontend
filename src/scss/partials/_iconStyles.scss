@@ -1,0 +1,114 @@
+@import "./iconVariables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3c20as');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3c20as#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?3c20as') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?3c20as') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?3c20as##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.im--hamburger {
+  &:before {
+    content: $im--hamburger;     
+    color: #ff8e4c;
+  }
+}
+.im--linkedin {
+  &:before {
+    content: $im--linkedin; 
+  }
+}
+.im--double-down-arrow .path1 {
+  &:before {
+    content: $im--double-down-arrow-path1;  
+    color: rgb(255, 142, 76);
+  }
+}
+.im--double-down-arrow .path2 {
+  &:before {
+    content: $im--double-down-arrow-path2;  
+    margin-left: -0.814453125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.im--double-up-arrow .path1 {
+  &:before {
+    content: $im--double-up-arrow-path1;  
+    color: rgb(255, 142, 76);
+  }
+}
+.im--double-up-arrow .path2 {
+  &:before {
+    content: $im--double-up-arrow-path2;  
+    margin-left: -0.814453125em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.im--arrow-right {
+  &:before {
+    content: $im--arrow-right;     
+    color: #fff;
+  }
+}
+.im--cross {
+  &:before {
+    content: $im--cross;     
+    color: #ff8e4c;
+  }
+}
+.im--facebook {
+  &:before {
+    content: $im--facebook;     
+    color: #fff;
+  }
+}
+.im--instagram {
+  &:before {
+    content: $im--instagram;     
+    color: #fff;
+  }
+}
+.im--twitter {
+  &:before {
+    content: $im--twitter;     
+    color: #fff;
+  }
+}
+.im--play {
+  &:before {
+    content: $im--play; 
+    color: #fff;
+  }
+}
+.im--sphere {
+  &:before {
+    content: $im--sphere; 
+    color: #fff;
+  }
+}
+.im--volume-low {
+  &:before {
+    content: $im--volume-low; 
+    color: #fff;
+  }
+}

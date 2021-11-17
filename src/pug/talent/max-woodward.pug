@@ -1,0 +1,53 @@
+extends ../layout
+
+block head
+    title Max WoodWard | Talent | imaego
+    - var bodyClass='headerHide showBack'
+
+block content
+    h2.teko.bg--title.home TALENT
+    section.container--responsive
+        .inner_container 
+            h1.page-title.teko.font--center.desktopOnly MAX WOODWARD
+            h2.teko.bg--title.talent-header.mobileOnly Max Woodward
+            //- p.page-subtitle.font--center.mb--40.desktopOnly Written by Max himself, here's a little bit about him...
+            .centerSocial.desktopOnly    
+                    ul.social
+                        div.socialHandles
+                            li
+                                a(href="https://www.instagram.com/maxjwoodward/" target="_blank")
+                                    i.im--instagram
+                            a.handlesLink(href="https://www.instagram.com/maxjwoodward/" target="_blank")
+                                    p.handles maxjwoodward
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            .leftSocial.mobileOnly    
+                    ul.social
+                        li
+                            a(href="https://www.instagram.com/maxjwoodward/" target="_blank")
+                                i.im--instagram
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            img(src=require('src/images/max/MaxCP.jpg') alt="Max WoodWard")
+            .stroke-line
+            p.page-subtitle.font--center.mb--45 Written by Max himself, here's a little bit about him...
+            p.talent-text I was born and raised in Hong Kong. My life has always revolved around sports, particularly rugby, so when I eventually captaining HK in the 7s was a dream come true. I have been playing professionally since I was 22, first for the HK 7s team, then in Japan, now back with the 7s. I have been told twice by surgeons I will not play rugby again, the last time was 5 years ago, I play now with no ACL in my right knee, stronger than ever.
+            p.talent-text Outside of rugby I have a deep passion for health, fitness, performance and nutrition. I train clients and athletes with a focus on body composition and strength work, using my experience of rehabbing knee injuries without surgery to help others. I love exploring HK, and the world on two wheels, finding great coffee, great food and great conversations.
+            p.talent-text I want to use social media to offer people online programming from home or gyms that is different to the usual methods you see with PTs and online training. New exercises, tried and tested by me with a focus on performance for everyone, mobility, strength, wellbeing. all linked!!
+            p.talent-text I would love to work with brands whose mission it is to get people out and exercising, eating well, training, reading, meditating etc. Anything in that space. I like brands that encourage work ethic, help people perform to their best.
+            .gallery-images
+                .image
+                    img(src=require('src/images/max/max1.jpg') alt="Max WoodWard")
+                .image
+                    img(src=require('src/images/max/max2.jpg') alt="Max WoodWard")
+                //- .image
+                //-     img(src=require('src/images/max/MaxCP.jpg') alt="Max WoodWard")
+            

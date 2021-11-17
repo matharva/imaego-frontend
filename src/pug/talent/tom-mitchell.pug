@@ -1,0 +1,59 @@
+extends ../layout
+
+block head
+    title Tom Mitchell | Talent | imaego
+    - var bodyClass='headerHide showBack'
+
+block content
+    h2.teko.bg--title.home TALENT
+    section.container--responsive
+        .inner_container 
+            h1.page-title.teko.font--center.desktopOnly TOM MITCHELL
+            h2.teko.bg--title.talent-header.mobileOnly Tom Mitchell
+            //- p.page-subtitle.font--center.mb--40.desktopOnly Written by Tom himself, here's a little bit about him...
+            .centerSocial.desktopOnly    
+                    ul.social
+                        div.socialHandles
+                            li
+                                a(href="https://www.instagram.com/trmitchell/" target="_blank")
+                                    i.im--instagram
+                            a.handlesLink(href="https://www.instagram.com/trmitchell/" target="_blank")
+                                    p.handles trmitchell
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            .leftSocial.mobileOnly    
+                    ul.social
+                        li
+                            a(href="https://www.instagram.com/trmitchell/" target="_blank")
+                                i.im--instagram
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            img(src=require('src/images/tom/Tom_CP.jpg') alt="Tom Mitchell")
+            .stroke-line
+            p.page-subtitle.font--center.mb--45 Written by Tom himself, here's a little bit about him...
+            p.talent-text My name is Tom Mitchell. I am loving the journey of life! Much of that journey for the last 10 years has been playing professional rugby 7s for England and Great Britain. I love experiencing the physical and emotional extremes.
+            p.talent-text Being on a sporting stage has given me the opportunity to try to inspire people - to pursue a passion, to work hard and commit to something we love, to appreciate our life moments. These are messages I try to promote on my platforms. Alongside this I try to draw attention to issues bigger than sport like the importance of diversity and inclusion and highlighting our environmental impact. I am proud to have served as Captain of my country for 7 years, and equally look forward for what is to come in my career. But I think the thing that I might be most satisfied with is if I can prove to be a good husband, father and friend to people I love.
+            p.talent-text I have always put great effort into delivering for brands that I partner with. A key element of this is believing in the brand and finding common ground, be that values and ethics, or just finding something interesting, cool or new.
+            .gallery-images.desktopOnly
+                .image
+                    img(src=require('src/images/tom/Tom_1.jpg') alt="Tom Mitchell")
+                .image
+                    img(src=require('src/images/tom/Tom_2.jpg') alt="Tom Mitchell")
+                .image
+                    img(src=require('src/images/tom/Tom3.jpg') alt="Tom Mitchell")
+            .gallery-images.mobileOnly.showFlex
+                .image
+                    img(src=require('src/images/tom/Tom3.jpg') alt="Tom Mitchell")
+                .image
+                    img(src=require('src/images/tom/Tom_2.jpg') alt="Tom Mitchell")
+            .gallery-images.mobileOnly.mt-3
+                .image.fullImage
+                    img(src=require('src/images/tom/Tom_1.jpg') alt="Tom Mitchell")

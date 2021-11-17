@@ -1,0 +1,37 @@
+extends layout
+
+block head
+    title imaego
+    meta(http-equiv="cache-control" content="no-cache")
+    meta(http-equiv="pragma" content="no-cache")
+    meta(http-equiv="expires" content="0")
+
+block content
+    .img-box#imgbox
+        img.logo#logo(src=require('src/images/overlay_logo.svg'))
+        
+        .loading-text
+            .percentage#percentage
+        .progress
+            .progress-value
+                .dot
+        .loader
+            #l1
+            #l2
+            #l3
+            #l4
+        #wrapper
+            #wrapper-inner
+                .column.scrollArrow
+                    p.indicator-arrow.indicator-arrow-text.bottom.bounceArrow scroll 
+                    img.indicator-arrow.bottom.bounceArrow(src=require('src/images/arrow-down.svg'))
+                    
+    .swiper-container.home.page#main
+        .swiper-wrapper
+            include sections/home
+            include sections/vision
+            include sections/journey
+            include sections/talent
+            include sections/insights
+            include sections/team
+            include sections/contact

@@ -1,0 +1,52 @@
+extends ../layout
+
+block head
+    title Ryan Tongia | Talent | imaego
+    - var bodyClass='headerHide showBack'
+
+block content
+    h2.teko.bg--title.home TALENT
+    section.container--responsive
+        .inner_container 
+            h1.page-title.teko.font--center.desktopOnly RYAN TONGIA
+            h2.teko.bg--title.talent-header.mobileOnly Ryan Tongia
+            //- p.page-subtitle.font--center.mb--40 Written by Tom himself, here's a little bit about him...
+            .centerSocial.desktopOnly    
+                    ul.social
+                        div.socialHandles
+                            li
+                                a(href="https://www.instagram.com/Ryan Tongia/" target="_blank")
+                                    i.im--instagram
+                            a.handlesLink(href="https://www.instagram.com/Ryan Tongia/" target="_blank")
+                                    p.handles Ryan Tongia
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            .leftSocial.mobileOnly    
+                    ul.social
+                        li
+                            a(href="https://www.instagram.com/Ryan Tongia/" target="_blank")
+                                i.im--instagram
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            img(src=require('src/images/ryan/Ryan_CP.jpg') alt="Ryan Tongia")
+            .stroke-line
+            p.page-subtitle.font--center.mb--45.mobileOnly
+            p.talent-text Ryan is on a mission to positively influence, educate, and motivate people to be the best versions of themselves. His vision of total health is to create valuable long-lasting connections while encouraging and empowering people to be not just physically but also mentally fit.
+            p.talent-text Ryan takes this energy to boardrooms and conferences helping business people to perform at their peak while exploring holistic mind-body health!
+            //- p I have always put great effort into delivering for brands that I partner with. A key element of this is believing in the brand and finding common ground, be that values and ethics, or just finding something interesting, cool or new.
+            .gallery-images
+                .image
+                    img(src=require('src/images/ryan/Ryan1.jpg') alt="Ryan Tongia")
+                .image
+                    img(src=require('src/images/ryan/Ryan2.jpg') alt="Ryan Tongia")
+                //- .image
+                //-     img(src=require('src/images/ryan/Ryan_CP.jpg') alt="Ryan Tongia")
+            

@@ -1,0 +1,68 @@
+extends ../layout
+
+block head
+    title 
+    - var bodyClass='headerHide showBack'
+
+block content
+    h2.teko.bg--title.home TALENT
+    section.container--responsive
+        .inner_container 
+            h1.page-title.teko.font--center.desktopOnly#title 
+            h2.teko.bg--title.talent-header.mobileOnly#mtitle 
+            //- p.page-subtitle.font--center.mb--40.desktopOnly Written by Chris himself, here's a little bit about his story...
+            .centerSocial.desktopOnly    
+                ul.social#socialsD
+                    //- div.socialHandles
+                    //-     li
+                    //-         a(href="https://www.instagram.com/ohwhataknight_/" target="_blank")
+                    //-             i.im--instagram
+                    //-     a.handlesLink(href="https://www.instagram.com/ohwhataknight_/" target="_blank")
+                    //-         p.handles ohwhataknight
+                    //- div.socialHandles
+                    //-     li
+                    //-         a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                    //-             i.im--play
+                    //-     a.handlesLink(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                    //-         p.handles Chris Knight
+                    //- div.socialHandles
+                    //-     li
+                    //-         a(href="https://ohwhataknight.co.uk/" target="_blank")
+                    //-             i.im--sphere
+                    //-     a.handlesLink(href="https://ohwhataknight.co.uk/" target="_blank")
+                    //-         p.handles ohwhataknight.co.uk
+            .leftSocial.mobileOnly    
+                ul.social
+                    li
+                        a(href="https://www.instagram.com/ohwhataknight_/" target="_blank")
+                            i.im--instagram
+                    li
+                        a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                            i.im--play
+                    li
+                        a(href="https://ohwhataknight.co.uk/" target="_blank")
+                            i.im--sphere
+            img#bannerImage()
+            .stroke-line
+            p.page-subtitle.font--center.mb--45#oneliner Written by Chris himself, here's a little bit about his story...
+            .content.talent-text#content
+                p.talent-text Helô, shw mae!
+                p.talent-text My name is Chris Knight and I am an adventurer. Being a former professional rugby player for Wales, I have always been an extremely active individual, which I now direct towards my landscape photography. I am also a licensed drone pilot and love astrophotography!
+                p.talent-text My journey from rugby to adventure began in 2017 when I was forced to retire due to injury. I had grown up on the Gower Coast of Wales and so resorted back home to overcome the struggles that came with an early retirement. Since then, I've tried to fill my time with nothing but travels and adventures with my camera in hand.
+                p.talent-text I desire to create content that not only excites but inspires people to get into the great outdoors and fall in love with it, the same way I have. It's crucial to me, to work with brands that share my love of nature and it's beauties, and I'd love to take those brands to every corner of the globe that I plan to explore
+            .gallery-images.desktopOnly#footerImages
+                //- .image#footerImage1
+                //-     img()
+                //- .image#footerImage2
+                //-     img()
+                //- .image#footerImage3
+                //-     img()
+            .gallery-images.mobileOnly.showFlex#footerMImages
+                //- .image
+                //-     img(src=require('src/images/chris/Chris3.jpg') alt="Chris Knight")
+                //- .image
+                //-     img(src=require('src/images/chris/Chris2.jpg') alt="Chris Knight")
+            .gallery-images.mobileOnly.mt-3#footerMBigImages
+                //- .image.fullImage
+                //-     img(src=require('src/images/chris/Chris1.jpg') alt="Chris Knight")
+            

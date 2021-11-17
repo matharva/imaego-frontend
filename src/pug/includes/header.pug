@@ -1,0 +1,49 @@
+.header--placeholder
+header
+    a.browserBack( onclick="goBack()" )
+        img(src=require('src/images/arrow-back.svg') alt="imaego")
+    a.talent-logo.desktopOnly(href="/") 
+        img.header-logo(src=require('src/images/Logo.svg')  alt="imaego")
+    button.hamburger
+        i.im--hamburger
+    nav
+        button.closeHamburger
+            i.im--cross
+        span.active-bar
+        ul.pages
+            li
+                img(src=require('src/images/logo-2.png') alt="imaego")
+            li Vision
+            li The Journey
+            li Talent
+            //- li Insights
+            li Our Team
+            li Contact Us
+        ul.social
+            li
+                a(href="https://www.instagram.com/imaego_/" target="_blank")
+                    i.im--instagram
+            li
+                a(href="#" target="_blank")
+                    i.im--linkedin
+            li
+                a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                    i.im--facebook
+script.
+    function goBack(){
+        var s=window.location.pathname
+        if(s.includes("talent")){
+            window.location.href="/?key=3"
+        }
+        else if(s.includes("team")){
+            window.location.href="/?key=5"
+        }
+        else if(s.includes("insight")){
+            window.location.href="/?key=4"
+        }
+        else{
+            window.location.href="/"
+        }
+            
+    }
+        

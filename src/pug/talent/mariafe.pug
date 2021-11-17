@@ -1,0 +1,51 @@
+extends ../layout
+
+block head
+    title Mariafe | Talent | imaego
+    - var bodyClass='headerHide showBack'
+
+block content
+    h2.teko.bg--title.home TALENT
+    section.container--responsive
+        .inner_container 
+            h1.page-title.teko.font--center.desktopOnly MARIAFE
+            h2.teko.bg--title.talent-header.mobileOnly Mariafe
+            //- p.page-subtitle.font--center.mb--40.desktopOnly Written by Mariafe herself, here's a little bit about her...
+            .centerSocial.desktopOnly    
+                    ul.social
+                        li
+                            a(href="https://www.instagram.com/mariafe_beach1/" target="_blank")
+                                i.im--instagram
+                        a.handlesLink(href="https://www.instagram.com/mariafe_beach1/" target="_blank")
+                            p.handles mariafe_beach1
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            .leftSocial.mobileOnly
+                    ul.social
+                        li
+                            a(href="https://www.instagram.com/mariafe_beach1/" target="_blank")
+                                i.im--instagram
+                        //- li
+                        //-     a(href="https://www.youtube.com/channel/UCyHkWC_aczYGKol8ewlcl5A" target="_blank")
+                        //-         i.im--play
+                        //- li
+                        //-     a(href="https://www.facebook.com/imaegomedia/" target="_blank")
+                        //-         i.im--facebook
+            img(src=require('src/images/mariafe/MariafeCP.jpg') alt="Mariafe")
+            .stroke-line
+            p.page-subtitle.font--center.mb--45 Written by Mariafe herself, here's a little bit about her...
+            p.talent-text My name is Mariafe Artacho del Solar, I’m 27 years old and a current Olympic beach volleyball player. I’ve been playing professionally for almost 10 years, but it was love at first sight at the age of 12.
+            p.talent-text I love staying true to myself and inspiring others to be their best version, to reach high and to not limit themselves. Staying active and spending quality time with my loved ones is always at the top of my priority list. My mantra is to always be feeling confident in my own skin and making an effort to transmit that to others, to be confident in themselves.
+            p.talent-text My aim is to have a positive influence and inspire others with my actions and always have a willingness to help others. For me, when working with brands and potential partners my main focus is that our values align and we both believe in what we are trying to achieve together.
+            .gallery-images
+                .image
+                    img(src=require('src/images/mariafe/Maria1.jpg') alt="Mariafe")
+                .image
+                    img(src=require('src/images/mariafe/Maria2.jpg') alt="Mariafe")
+                //- .image
+                //-     img(src=require('src/images/placeholder-1.jpg') alt="Mariafe")
+            
